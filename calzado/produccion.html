@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Calzado Pro - Producción</title>
+</head>
+<body>
+    <nav class="navbar navbar-dark bg-dark mb-4 shadow">
+        <div class="container">
+            <span class="navbar-brand">CALZADO PRO - PRODUCCIÓN</span>
+            <a href="index.html" class="btn btn-outline-light btn-sm">Regresar</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="fw-bold">CONTROL DE PRODUCCIÓN EN TIEMPO REAL</h2>
+            <p class="text-muted">Seguimiento de órdenes por etapa de fabricación</p>
+        </div>
+
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="p-2 mb-3 bg-secondary text-white text-center rounded shadow-sm fw-bold">
+                    CORTE
+                </div>
+                <div class="card mb-3 shadow-sm border-start border-4 border-secondary">
+                    <div class="card-body">
+                        <h6 class="card-title fw-bold">OP #102</h6>
+                        <p class="card-text mb-1">Cantidad: 50 Pares</p>
+                        <p class="small text-muted">Material: Cuero Negro</p>
+                        <button class="btn btn-sm btn-outline-dark w-100">Ver Detalles</button>
+                    </div>
+                </div>
+                <div class="card mb-3 shadow-sm border-start border-4 border-secondary">
+                    <div class="card-body">
+                        <h6 class="card-title fw-bold">OP #105</h6>
+                        <p class="card-text mb-1">Cantidad: 12 Pares</p>
+                        <p class="small text-muted">Material: Gamuza Azul</p>
+                        <button class="btn btn-sm btn-outline-dark w-100">Ver Detalles</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="p-2 mb-3 bg-warning text-dark text-center rounded shadow-sm fw-bold">
+                    SOLADURA
+                </div>
+                <div class="card mb-3 shadow-sm border-start border-4 border-warning">
+                    <div class="card-body">
+                        <h6 class="card-title fw-bold">OP #101</h6>
+                        <p class="card-text mb-1">Cantidad: 10 Pares</p>
+                        <p class="small text-muted">Material: Suela Goma</p>
+                        <button class="btn btn-sm btn-outline-dark w-100">Ver Detalles</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="p-2 mb-3 bg-success text-white text-center rounded shadow-sm fw-bold">
+                    TERMINADO
+                </div>
+                <div class="card mb-3 shadow-sm border-start border-4 border-success">
+                    <div class="card-body">
+                        <h6 class="card-title fw-bold">OP #099</h6>
+                        <p class="card-text mb-1">Cantidad: 30 Pares</p>
+                        <p class="small text-muted">Estado: Empaque</p>
+                        <button class="btn btn-sm btn-outline-dark w-100">Ver Detalles</button>
+                    </div>
+                </div>
+                <div class="card mb-3 shadow-sm border-start border-4 border-success">
+                    <div class="card-body">
+                        <h6 class="card-title fw-bold">OP #100</h6>
+                        <p class="card-text mb-1">Cantidad: 30 Pares</p>
+                        <p class="small text-muted">Estado: Control Calidad</p>
+                        <button class="btn btn-sm btn-outline-dark w-100">Ver Detalles</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card mt-5 p-4 shadow-sm border-0 bg-light">
+            <h5 class="fw-bold mb-3">PROGRESO GENERAL DE LA FÁBRICA</h5>
+            <div class="progress shadow-sm" style="height: 30px;">
+                <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" 
+                     role="progressbar" 
+                     style="width: 60%;" 
+                     aria-valuenow="60" 
+                     aria-valuemin="0" 
+                     aria-valuemax="100">
+                    60% COMPLETADO
+                </div>
+            </div>
+            <p class="mt-3 text-muted small">* Datos actualizados en tiempo real según reportes de operarios.</p>
+        </div>
+        
+        <div class="text-center mt-4">
+            <button class="btn btn-primary btn-lg shadow">+ NUEVA OPERACIÓN</button>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

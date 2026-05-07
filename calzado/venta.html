@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Calzado Pro - Ventas</title>
+</head>
+<body>
+    <nav class="navbar navbar-dark bg-dark mb-4 shadow">
+        <div class="container">
+            <span class="navbar-brand">CALZADO PRO - VENTAS</span>
+            <a href="index.html" class="btn btn-outline-light btn-sm">Regresar</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card p-4 shadow-sm">
+                    <h4 class="mb-3">Nueva Venta</h4>
+                    <form>
+                        <div class="mb-3">
+                            <label class="form-label font-weight-bold">Nombre del Cliente</label>
+                            <input type="text" class="form-control" placeholder="Ej: Juan Pérez">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Producto / Referencia</label>
+                            <select class="form-select">
+                                <option selected>Seleccione un producto...</option>
+                                <option value="1">Bota Industrial Ref. 502</option>
+                                <option value="2">Zapato Formal Negro</option>
+                                <option value="3">Tenis Deportivo Blanco</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Cantidad</label>
+                            <input type="number" class="form-control" value="1" min="1">
+                        </div>
+                        <div class="mb-4">
+                            <label class="form-label">Precio Total</label>
+                            <div class="input-group">
+                                <span class="input-group-text">$</span>
+                                <input type="text" class="form-control bg-light" value="150.000" readonly>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100 mb-2">Registrar Venta</button>
+                        <button type="reset" class="btn btn-outline-danger w-100">Limpiar Campos</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="col-md-8">
+                <div class="card p-4 shadow-sm">
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                        <h4 class="m-0">Historial de Ventas Recientes</h4>
+                        <span class="badge bg-info text-dark">Hoy: 13 de Abril</span>
+                    </div>
+                    
+                    <div class="table-responsive">
+                        <table class="table table-striped table-hover border">
+                            <thead class="table-dark">
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Cliente</th>
+                                    <th>Producto</th>
+                                    <th>Total</th>
+                                    <th>Acciones</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>#001</td>
+                                    <td>Marcos Díaz</td>
+                                    <td>Bota Industrial</td>
+                                    <td>$300.000</td>
+                                    <td>
+                                        <button class="btn btn-sm btn-outline-primary">Ver</button>
+                                        <button class="btn btn-sm btn-outline-danger">Anular</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>#002</td>
+                                    <td>Elena Gómez</td>
+                                    <td>Zapato Formal</td>
+                                    <td>$150.000</td>
+                                    <td>
+                                        <button class="btn btn-sm btn-outline-primary">Ver</button>
+                                        <button class="btn btn-sm btn-outline-danger">Anular</button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
