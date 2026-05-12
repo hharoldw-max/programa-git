@@ -1,0 +1,43 @@
+CREATE DATABASE sistema_ventas;
+USE sistema_ventas;
+
+CREATE TABLE CLIENTES (
+    id_clientes INT AUTO_INCREMENT PRIMARY KEY,
+    nombre_completo VARCHAR(100) NOT NULL
+);
+
+
+CREATE TABLE USUARIOS (
+    id_usuario INT AUTO_INCREMENT PRIMARY KEY,
+    usuario VARCHAR(50) NOT NULL,
+    contraseña VARCHAR(100) NOT NULL
+);
+
+
+CREATE TABLE PRODUCTOS (
+    id_productos INT AUTO_INCREMENT PRIMARY KEY,
+    nombre VARCHAR(100) NOT NULL,
+    precio DECIMAL(10,2) NOT NULL
+);
+
+
+
+CREATE TABLE VENTA (
+    id_ventas INT AUTO_INCREMENT PRIMARY KEY,
+    id_cliente INT NOT NULL,
+    id_usuario INT NOT NULL,
+    fecha DATE NOT NULL,
+    total_pago DECIMAL(10,2) NOT NULL,
+
+    CONSTRAINT fk_venta_cliente
+    FOREIGN KEY (id_cliente)
+    REFERENCES CLIENTES(id_clientes)
+    ON DELETE CASCADE
+    ON UPDATE CASCADE,
+
+    CONSTRAINT fk_venta_usuario
+    FOREIGN KEY (id_usuario)
+    REFERENCES USUARIOS(id_usuario)
+    ON DELETE CASCADE
+    ON UPDATE CASCADE
+);
